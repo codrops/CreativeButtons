@@ -1638,7 +1638,7 @@
 
 /* Button 8c */
 .btn-8c:after {
-	width: 20%;
+	width: 21%; /* should be 20% but there's a gap in Chrome Version 34.0.1847.131 */
 	height: 100%;
 	left: -20%;
 	top: 0;
