@@ -1314,9 +1314,6 @@
 }
 
 /* Button 7h */
-.btn-7h {
-	overflow: hidden;
-}
 
 .btn-7h span {
 	display: inline-block;
@@ -1526,7 +1523,7 @@
 }
 
 .btn-7i:after {
-	height: 10px;
+	height: 11px; /* should be 10px but in Chrome Version 34.0.1847.131 there's a gap because of the transform of the button */
 	width: 100%;
 	background: #17aa56;
 	border-radius: 7px 7px 0 0;
@@ -1583,6 +1580,7 @@
 .btn-8 {
 	display: block;
 	background: #5cbcf6;
+	outline: 1px solid transparent; /* FF jagged edges fix */
 	-webkit-transform-style: preserve-3d;
 	-moz-transform-style: preserve-3d;
 	transform-style: preserve-3d;
@@ -1595,7 +1593,7 @@
 /* Button 8a */
 .btn-8a:after {
 	width: 100%;
-	height: 40%;
+	height: 42%; /* should be 40% but there's a gap in Chrome Version 34.0.1847.131 */
 	left: 0;
 	top: -40%;
 	background: #49a7df;
@@ -1696,7 +1694,7 @@
 
 .btn-8e:after {
 	width: 100%;
-	height: 40%;
+	height: 42%; /* should be 40% but there's a gap in Chrome Version 34.0.1847.131 */
 	left: 0;
 	top: -40%;
 	background: #49a7df;
@@ -1769,7 +1767,7 @@
 }
 
 .btn-8g:after {
-	top: -100%;
+	top: -98%; /* should be -100% but there's a gap in Chrome Version 34.0.1847.131 */
 	background: #7aca7c;
 	color: #358337;
 	content: 'It worked!';
